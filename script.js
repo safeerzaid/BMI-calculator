@@ -5,10 +5,6 @@ btn.addEventListener('click', () => {
   const height = Number(document.getElementById('height').value);
   const weight = Number(document.getElementById('weight').value);
 
-  if (!height || !weight) {
-    result.textContent = "Please enter height and weight";
-    return;
-  }
 
   const bmi = weight / (height * height);
   let status;
